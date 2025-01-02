@@ -1,19 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bike Zone Website</title>
+    <link rel="stylesheet" href="style/style.css">
+    <!-- DaisyUI and Tailwind link here -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
+
+<body class="google-poppins">
+    <header class="bg-[#264653] p-6">
+        <!-- nav-bar start codding here -->
+        <section class="container mx-auto ">
+            <div class="navbar mb-16">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost text-[#fff] lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg " class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a class="text-[#fff]">Contact</a></li>
+                            <li>
+                                <a class="text-[#fff]">Shop</a>
+
+                            </li>
+                            <li><a class="text-[#fff]">News</a></li>
+                        </ul>
+                    </div>
+                    <a class="text-4xl font-bold hidden md:block text-[#fff]">Bike Zone</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="text-[#fff]">Home </a></li>
+                        <li><a class="text-[#fff]">Shop </a></li>
+                        <li><a class="text-[#fff]">News </a></li>
+                        <li><a class="text-[#fff]">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn bg-[#E76F51] text-[#fff] border-none">Login</a>
+                </div>
+            </div>
+            <section class="md:flex justify-center items-center">
+                <section class="">
+                    <p class="text-[#fff]">Computer-controlled digital transistorized with electronic advance</p>
+                    <h3 class="text-4xl font-bold text-[#fff] my-3">Honda CBR 300R</h3>
+                    <p class="text-[#fff]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                        Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+                    <button class="btn bg-[#E76F51] border-none mt-3">Purchase</button>
+                </section>
+                <section><img src="./images/slider/bike1.png" alt=""></section>
+            </section>
+        </section>
 
     </header>
-    <main>
+    <main class="container mx-auto">
+        <!-- featured Bikes section codding here-->
+        <section>
+            <h3 class="text-4xl font-bold text-center mt-6 md:mt-12">Featured Bikes In This Year</h3>
+            <section class=" md:flex gap-x-5 justify-center items-center mt-5">
+                <div><img src="./images/slider/bike2.png" alt=""></div>
+                <div><img src="./images/slider/bike1.png" alt=""></div>
+                <div><img src="./images/slider/bike4.png" alt=""></div>
+            </section>
+        </section>
+        <!-- latest News section codding here -->
+        <section>
+            <h3 class="text-4xl font-bold text-center my-6 md:my-12">latest News</h3>
+            <section class="md:flex justify-center items-center gap-5 ">
+                <!-- latest bike -1 -->
+                <div class="card bg-base-100 w-96 shadow-xl">
+                    <figure>
+                        <img src="./images/others/latest1.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Ducati XDIAVEL S-73!</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi lectus at.</p>
+                        <div class="card-actions justify-start">
+                            <button class="btn bg-[#E76F51] border-none mt-5 text-[#fff]">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- latest bike -2 -->
+                <div class="card bg-base-100 w-96 shadow-xl">
+                    <figure>
+                        <img src="./images/others/latest2.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Motorcycles & Scooters!</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi lectus at.</p>
+                        <div class="card-actions justify-start">
+                            <button class="btn border-1 border-[#E76F51] text-[#E76F51]  mt-5 ">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- latest bike -3 -->
+                <div class="card bg-base-100 w-96 shadow-xl">
+                    <figure>
+                        <img src="./images/others/latest3.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">2021 Honda CBR500R!</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi lectus at.</p>
+                        <div class="card-actions justify-start">
+                            <button class="btn border-1 border-[#E76F51] text-[#E76F51]  mt-5 bg-[#1px	Inside
+                    #E76F51]">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!-- Happy Clients says section codding here -->
+        <section class="mt-12 mb-16">
+            <h3 class="text-4xl font-bold text-center">Happy <span class="text-[#E76F51]">Clients says</span></h3>
+            <!-- img box -1 -->
+            <div class="card bg-base-100 w-96 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="./images/others/user-1.png"
+                    alt="Shoes"
+                    class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Shoes!</h2>
+                  <p>Slate helps you see how 
+                    many more days you need 
+                    to work to reach your financial 
+                    goal for the month and year.</p>
+                  <div class="card-actions">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+        </section>
 
     </main>
     <footer>
-        
+
     </footer>
 </body>
+
 </html>
